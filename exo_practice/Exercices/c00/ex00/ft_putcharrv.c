@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ft_putcharrv.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: codephenix2 <marvin@42.fr>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/15 09:44:51 by codephenix2       #+#    #+#             */
-/*   Updated: 2025/05/13 09:44:49 by codephenix2      ###   ########.fr       */
+/*   Created: 2025/06/23 14:42:43 by codephenix2       #+#    #+#             */
+/*   Updated: 2025/06/23 14:51:49 by codephenix2      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,14 @@
 
 void	ft_putchar(char c)
 {
-	write(1, &c, 1);
-}
-
-void	ft_is_negative(int n)
-{
-	if (n >= 0)
-		ft_putchar('P');
-	if (n < 0)
-		ft_putchar('N');
+	write (1, &c, 1);
 }
 
 int	main(void)
 {
-	ft_is_negative(-9);
-	ft_is_negative(15);
-	ft_is_negative(0);
-	ft_is_negative(-5);
-	ft_is_negative(80);
-	return (0);
+	ft_putchar('g');
+	ft_putchar('i');
+	ft_putchar('t');
+	ft_putchar('a');
+	ft_putchar('n');
 }

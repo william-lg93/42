@@ -1,36 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: codephenix2 <marvin@42.fr>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/15 09:44:51 by codephenix2       #+#    #+#             */
-/*   Updated: 2025/05/13 09:44:49 by codephenix2      ###   ########.fr       */
+/*   Created: 2025/08/05 12:40:42 by codephenix2       #+#    #+#             */
+/*   Updated: 2025/08/05 12:56:23 by codephenix2      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char c)
+void	ft_rev_int_tab(int *tab, int size)
 {
-	write(1, &c, 1);
-}
+	int = i;
 
-void	ft_is_negative(int n)
-{
-	if (n >= 0)
-		ft_putchar('P');
-	if (n < 0)
-		ft_putchar('N');
-}
+	i = 0;
+	while (tab[i] != size)
+	{
 
-int	main(void)
-{
-	ft_is_negative(-9);
-	ft_is_negative(15);
-	ft_is_negative(0);
-	ft_is_negative(-5);
-	ft_is_negative(80);
-	return (0);
+		i++;
+	}
 }

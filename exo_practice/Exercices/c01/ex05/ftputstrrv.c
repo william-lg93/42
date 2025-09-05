@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ftputstrrv.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: codephenix2 <marvin@42.fr>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/15 09:44:51 by codephenix2       #+#    #+#             */
-/*   Updated: 2025/05/13 09:44:49 by codephenix2      ###   ########.fr       */
+/*   Created: 2025/07/09 11:47:55 by codephenix2       #+#    #+#             */
+/*   Updated: 2025/07/11 10:12:12 by codephenix2      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,20 +17,19 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	ft_is_negative(int n)
+void	ft_putstr(char *str)
 {
-	if (n >= 0)
-		ft_putchar('P');
-	if (n < 0)
-		ft_putchar('N');
+	while (*str != '\0')
+	{
+		ft_putchar(*str);
+		str++;
+	}
 }
 
 int	main(void)
 {
-	ft_is_negative(-9);
-	ft_is_negative(15);
-	ft_is_negative(0);
-	ft_is_negative(-5);
-	ft_is_negative(80);
-	return (0);
+	ft_putstr("yo mec \n");
+	ft_putstr("jjjjjjjjj     iiiiiiiii 989999999 \n");
+	ft_putstr("956498vfdvdfhtgsh46    546dezferg5vczejbfzei IUGFUEZF52564OZEOOFIEÉÉÉÉÈÈÈÈÎÎÊ");
+
 }

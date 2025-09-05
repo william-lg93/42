@@ -1,36 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: codephenix2 <marvin@42.fr>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/15 09:44:51 by codephenix2       #+#    #+#             */
-/*   Updated: 2025/05/13 09:44:49 by codephenix2      ###   ########.fr       */
+/*   Created: 2025/05/19 10:19:36 by codephenix2       #+#    #+#             */
+/*   Updated: 2025/05/20 10:28:14 by codephenix2      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char c)
+void	ft_swap(int *a, int *b)
 {
-	write(1, &c, 1);
+	int	c;
+
+	c = 0;
+	c = *a;
+	*a = *b;
+	*b = c;
 }
 
-void	ft_is_negative(int n)
-{
-	if (n >= 0)
-		ft_putchar('P');
-	if (n < 0)
-		ft_putchar('N');
-}
+/* #include <stdio.h>
 
 int	main(void)
 {
-	ft_is_negative(-9);
-	ft_is_negative(15);
-	ft_is_negative(0);
-	ft_is_negative(-5);
-	ft_is_negative(80);
-	return (0);
-}
+	int	a;
+	int	b;
+
+	b = 2;
+	a = 5;
+	printf(" %d ", a);
+	printf(" %d ", b);
+	ft_swap(&a, &b);
+	printf("\n");
+	printf(" %d ", a);
+	printf(" %d ", b);
+	printf("\n");
+}*/

@@ -1,36 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   fu_putnbrrv.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: codephenix2 <marvin@42.fr>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/15 09:44:51 by codephenix2       #+#    #+#             */
-/*   Updated: 2025/05/13 09:44:49 by codephenix2      ###   ########.fr       */
+/*   Created: 2025/06/23 15:03:37 by codephenix2       #+#    #+#             */
+/*   Updated: 2025/06/23 15:08:11 by codephenix2      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
+void 	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
-void	ft_is_negative(int n)
+void	ft_putnbr(int nb)
 {
-	if (n >= 0)
-		ft_putchar('P');
-	if (n < 0)
-		ft_putchar('N');
-}
+	nb = 0;
 
-int	main(void)
+	ft_putchar(nb);
+}
+ int	main(void)
 {
-	ft_is_negative(-9);
-	ft_is_negative(15);
-	ft_is_negative(0);
-	ft_is_negative(-5);
-	ft_is_negative(80);
-	return (0);
+	ft_putnbr(25);
+	ft_putnbr(56);
+	ft_putnbr(10);
 }

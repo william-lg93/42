@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ft_alphabet+1.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: codephenix2 <marvin@42.fr>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/15 09:44:51 by codephenix2       #+#    #+#             */
-/*   Updated: 2025/05/13 09:44:49 by codephenix2      ###   ########.fr       */
+/*   Created: 2025/09/03 11:52:32 by codephenix2       #+#    #+#             */
+/*   Updated: 2025/09/03 12:18:11 by codephenix2      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,20 +17,28 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	ft_is_negative(int n)
+void	ft_alphabetsp(char *str)
 {
-	if (n >= 0)
-		ft_putchar('P');
-	if (n < 0)
-		ft_putchar('N');
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] >= 97 && str[i] <= 121)
+			ft_putchar(str[i] + 1);
+		else if (str[i] >= 65 && str[i] <= 89)
+			ft_putchar(str[i] + 1);
+		else if (str[i] == 122)
+			ft_putchar(97);
+		else if (str[i] == 90)
+			ft_putchar(65);
+		else
+			ft_putchar(str[i]);
+		i++;
+	}
 }
 
 int	main(void)
 {
-	ft_is_negative(-9);
-	ft_is_negative(15);
-	ft_is_negative(0);
-	ft_is_negative(-5);
-	ft_is_negative(80);
-	return (0);
+	ft_alphabetsp("abc !ABC z ^Z");
 }
